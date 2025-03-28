@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./reset.css">
 </head>
 <body>
-    <h1>Aaaaaaaaafxfbfbfbfbfbba</h1>
+    <section class="contacts">
+        <form action="" class="contacts__form">
+            <input type="text" class="contacts__input input__name" placeholder="Ім'я" required>
+            <input type="text" class="contacts__input input__surname" placeholder="Прізвище" required>
+            <input type="tel" class="contacts__input input__tel" placeholder="Телефон" required>
+            <input type="email" class="contacts__input input__email" placeholder="Електронна адреса" required>
+            <button class="contacts__button" type="submit">Додати</button>
+            <button class="contacts__button" type="button">Оновити</button>
+        </form>
+        <ul class="contacts__list">
+            <!-- future items example -->
+            <!-- <li class="contacts__item">
+                <h2 class="contacts__name">Name Surname</h2>
+                <p class="contacts__tel">Phone number</p>
+                <p class="contacts__eemail">email@email.com</p>
+                <button class="contacts__delete">✖️</button>
+                <button class="contacts__modify">✎</button>
+            </li> -->
+        </ul>
+    </section>
     
     <script src="./main.js" type="module"></script>
 </body>
